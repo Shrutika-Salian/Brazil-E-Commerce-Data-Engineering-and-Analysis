@@ -11,10 +11,10 @@ from azure.storage.blob import BlobClient
 import os
 
 # Connect to Azure Blob storage and download the incoming file from Azure Blob 
-blob = BlobClient(account_url="https://azureblob7275.blob.core.windows.net",
-                  container_name="brazilproject7275",
+blob = BlobClient(account_url="",
+                  container_name="",
                   blob_name="CombineCSV5.csv",
-                  credential="t9cuuwj4rFSXXEd0p9SQEmWZEomlSU2S2xPSsJ8YJIab2+6lVlfJBetgc9OXSAgftLyy1bYPMAhN+AStN8ZECg==")
+                  credential="")
 
 original_file_name = "CombineCSV5.csv"
 new_file_name = "gremlin_project.csv"
@@ -204,9 +204,9 @@ def count_vertices(client):
     print("\n")
 
 try:
-    client = client.Client('wss://azure-gremlin-hp.gremlin.cosmos.azure.com:443/', 'g',
-                           username="/dbs/gremlin_test/colls/Person2",
-                           password="vor028T8qhpJK2Py2ox83j0KQ1CkWPVAMiTirOiU1XQQLeOQ9ss2tNcBeDLOBuunuI9VWAJpAAdmACDbg29Qyg==",
+    client = client.Client('', 'g',
+                           username="",
+                           password="",
                            message_serializer=serializer.GraphSONSerializersV2d0()
                            )
 
