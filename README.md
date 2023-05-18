@@ -9,7 +9,7 @@ A brief description of the implementation process:
 
 3.	For Azure Graph DB implementation, we first use Azure data factory to combine the multiple .csv files required for graph implementation into one file. We established a connection from python to our azure blob storage where the combined file is placed to directly fetch from there. Then, established a connection from python to Azure Cosmos Graph DB using Gremlin API. Once the connection was established, we created the vertices and edges using the Gremlin API, ingesting data into Azure Cosmos Graph DB.
 
-Data Architecture Diagram:
+Data Architecture Diagram:</br>
 <img width="488" alt="image" src="https://github.com/Shrutika-Salian/Brazil-E-Commerce-Data-Engineering-and-Analysis/assets/91072559/82183f22-7de2-418e-aba5-9b23b0c51900">
 
 
